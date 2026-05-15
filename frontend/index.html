@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Spam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar" id="sidebar"></aside>
+
+        <main class="content">
+
+            <header class="topbar">
+                <h1>Olá, Usuário!</h1>
+                <button>Notificações 3</button>
+            </header>
+
+            <section class="cards">
+                <div class="card">
+                    <h2 id="total-emails">0</h2>
+                    <p>E-mails analisados</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="spam-detectados">0</h2>
+                    <p>Spam detectados</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="nao-spam">0</h2>
+                    <p>Não Spam</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="ultima-verificacao">--:--</h2>
+                    <p>Última verificação</p>
+                </div>
+            </section>
+
+            <section class="emails">
+                <h2>Últimos e-mails analisados</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Remetente</th>
+                            <th>Assunto</th>
+                            <th>Classificação</th>
+                            <th>Data/Hora</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="lista-emails">
+                        <!-- O JavaScript vai preencher aqui -->
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="sidbar.js"></script>
+    <script>
+        carregarSidebar("painel");
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

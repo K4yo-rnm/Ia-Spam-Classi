@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar" id="sidebar"></aside>
+
+        <main class="content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Configurações</h1>
+                    <p>Personalize o funcionamento da análise de e-mails.</p>
+                </div>
+
+                <button class="btn-notificacao">Notificações 3</button>
+            </header>
+
+            <section class="form-card">
+                <h2>Análise de E-mails</h2>
+
+                <div class="linha-config">
+                    <label for="intervalo">Verificar novos e-mails a cada</label>
+                    <select id="intervalo">
+                        <option value="5">5 minutos</option>
+                        <option value="10">10 minutos</option>
+                        <option value="30">30 minutos</option>
+                        <option value="60">1 hora</option>
+                    </select>
+                </div>
+
+                <div class="linha-config">
+                    <span>Analisar apenas e-mails não lidos</span>
+                    <input type="checkbox" id="nao-lidos" checked>
+                </div>
+
+                <div class="linha-config">
+                    <span>Marcar e-mails como lidos após a análise</span>
+                    <input type="checkbox" id="marcar-lidos">
+                </div>
+
+                <div class="linha-config">
+                    <span>Mover e-mails classificados como spam para a pasta Spam</span>
+                    <input type="checkbox" id="mover-spam">
+                </div>
+            </section>
+
+            <section class="form-card">
+                <h2>Notificações</h2>
+
+                <div class="linha-config">
+                    <span>Receber notificações de novos e-mails suspeitos</span>
+                    <input type="checkbox" id="notificacoes" checked>
+                </div>
+
+                <div class="linha-config">
+                    <span>Exibir notificação na área de trabalho</span>
+                    <input type="checkbox" id="notificacao-area" checked>
+                </div>
+            </section>
+
+            <section class="form-card">
+                <h2>Outras Opções</h2>
+
+                <div class="linha-config">
+                    <label for="idioma">Idioma</label>
+                    <select id="idioma">
+                        <option value="pt-BR">Português (BR)</option>
+                        <option value="en-US">Inglês</option>
+                    </select>
+                </div>
+
+                <div class="linha-config">
+                    <label for="tema">Modo de exibição</label>
+                    <select id="tema">
+                        <option value="claro">Claro</option>
+                        <option value="escuro">Escuro</option>
+                    </select>
+                </div>
+            </section>
+
+            <button id="salvar-configuracoes" class="btn-principal">Salvar Configurações</button>
+
+            <p id="mensagem-configuracoes" class="mensagem-retorno"></p>
+
+        </main>
+
+    </div>
+
+    <script src="sidbar.js"></script>
+    <script>
+        carregarSidebar("configuracoes");
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
