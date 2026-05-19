@@ -189,6 +189,28 @@ Se tudo estiver correto, o terminal deverá mostrar uma mensagem parecida com:
 Servidor rodando em http://127.0.0.1:5000
 ```
 
+Se der erro de modulo não encontrado, deixe o topo do `backend/app.py` assim:
+
+``` bash
+from pathlib import Path
+import sys
+
+
+from flask import Flask, jsonify, request
+from flask_cors import CORS 
+
+RAIZ_PROJETO = Path(__file__).resolve().parent.parent
+sys.path.append(str(RAIZ_PROJETO))
+
+from ia.modelo import prever_texto, carregar_modelo
+
+```
+
+Agora ou acesse a pasta do backend ou execute no terminal:
+```bash
+python backend/app.py
+```
+
 O backend será responsável por receber as mensagens enviadas pelo frontend, processar a previsão com o modelo de IA e retornar o resultado para o usuário.
 
 ---
