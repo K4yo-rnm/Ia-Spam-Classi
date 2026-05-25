@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.db
+database/*.db
+.env
+.DS_Store
+.vscode/
+.env
+backend/credentials.json
+backend/token_google.json
+credentials.json
+token_google.json
