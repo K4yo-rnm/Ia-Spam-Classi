@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar" id="sidebar"></aside>
+
+        <main class="content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Sobre o Projeto</h1>
+                    <p>Entenda como funciona o classificador de e-mails com Inteligência Artificial.</p>
+                </div>
+
+                <button id="btn-notificacoes" type="button" class="btn-notificacoes">
+                    Notificações 0
+                </button>
+            </header>
+
+            <section class="form-card">
+                <h2>O que é o projeto?</h2>
+
+                <p>
+                    O Classificador de E-mails é um sistema que utiliza Inteligência Artificial
+                    para analisar mensagens recebidas e identificar se elas são Spam ou Não Spam.
+                </p>
+
+                <h2>Objetivo</h2>
+
+                <p>
+                    O objetivo do projeto é ajudar o usuário a manter sua caixa de entrada mais
+                    segura e organizada, filtrando mensagens suspeitas e facilitando a identificação
+                    de possíveis e-mails indesejados.
+                </p>
+            </section>
+
+            <section class="form-card">
+                <h2>Como funciona</h2>
+
+                <div class="steps">
+                    <div class="step-card">
+                        <h3>1. Coleta de e-mails</h3>
+                        <p>O sistema recebe ou coleta os dados principais do e-mail.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <h3>2. Análise com IA</h3>
+                        <p>A IA analisa remetente, assunto e conteúdo da mensagem.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <h3>3. Classificação</h3>
+                        <p>O e-mail é classificado como Spam ou Não Spam.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <h3>4. Histórico</h3>
+                        <p>O resultado é salvo e exibido no painel principal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-card">
+                <h2>Tecnologias utilizadas</h2>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>Scikit-learn</span>
+                    <span>TF-IDF</span>
+                    <span>SQLite</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <p class="versao">Versão 1.0.0</p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="sidebar.js"></script>
+    <script>
+        carregarSidebar("sobre");
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
