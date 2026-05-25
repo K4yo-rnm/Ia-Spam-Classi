@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar E-mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar" id="sidebar"></aside>
+
+        <main class="content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Conectar seu e-mail</h1>
+                    <p>Conecte sua conta para permitir a análise automática das mensagens.</p>
+                </div>
+
+                <button id="btn-notificacoes" type="button" class="btn-notificacoes">
+                    Notificações 0
+                </button>
+            </header>
+
+            <section class="form-card">
+                <h2>Conectar conta de e-mail</h2>
+                <p class="texto-ajuda">
+                    Escolha como deseja conectar sua conta para permitir a análise automática das mensagens.
+                </p>
+            
+                <div class="metodo-google">
+                    <div>
+                        <h3>Entrar com Google</h3>
+                        <p>
+                            Recomendado para contas Gmail. Você será redirecionado para a tela oficial do Google
+                            e não precisará informar senha no sistema.
+                        </p>
+                    </div>
+            
+                    <button id="btn-login-google" type="button" class="btn-google">
+                        Entrar com Google
+                    </button>
+                </div>
+            
+                <p id="mensagem-google" class="mensagem-retorno"></p>
+            
+                <div class="separador">
+                    <span>ou conecte manualmente</span>
+                </div>
+            
+                <h2>Conexão via IMAP</h2>
+                <p class="texto-ajuda">
+                    Use esta opção para conectar Gmail com senha de app, Outlook, Hotmail ou outros provedores compatíveis com IMAP.
+                </p>
+            
+                <div class="provedores">
+                    <button type="button" class="provedor-card" id="btn-gmail">
+                        <strong>Gmail IMAP</strong>
+                        <span>imap.gmail.com</span>
+                    </button>
+            
+                    <button type="button" class="provedor-card" id="btn-outlook">
+                        <strong>Outlook / Hotmail</strong>
+                        <span>outlook.office365.com</span>
+                    </button>
+                </div>
+            
+                <form id="form-conectar">
+                    <label for="email">Endereço de e-mail</label>
+                    <input type="email" id="email" placeholder="exemplo@dominio.com" required>
+            
+                    <label for="senha">Senha de aplicativo</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha de aplicativo" required>
+            
+                    <label for="servidor">Servidor IMAP</label>
+                    <input type="text" id="servidor" placeholder="imap.gmail.com" required>
+            
+                    <label for="porta">Porta</label>
+                    <input type="number" id="porta" value="993" required>
+            
+                    <p class="aviso-seguranca">
+                        Suas credenciais serão usadas apenas para conectar ao provedor escolhido via IMAP.
+                    </p>
+            
+                    <button type="submit" class="btn-principal">Conectar via IMAP</button>
+                </form>
+            
+                <p id="mensagem-conexao" class="mensagem-retorno"></p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="sidebar.js"></script>
+    <script>
+        carregarSidebar("conectar");
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
