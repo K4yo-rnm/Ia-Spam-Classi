@@ -417,11 +417,7 @@ A versão 2.0 já possui a base principal do sistema funcionando, com backend, f
 
 ---
 
-## 👨‍💻 Autor
 
-Desenvolvido por **Caio da Silva Braga**.
-
-Projeto criado com o objetivo de estudar e aplicar conceitos de **Inteligência Artificial**, **Machine Learning**, **Flask**, **Frontend Web**, **Banco de Dados** e integração entre sistemas.
 
 ---
 
