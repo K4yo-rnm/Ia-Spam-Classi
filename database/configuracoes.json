@@ -1,0 +1,10 @@
+{
+    "intervalo": "5",
+    "analisar_nao_lidos": true,
+    "marcar_lidos": false,
+    "mover_spam": true,
+    "notificacoes": true,
+    "notificacao_area": true,
+    "idioma": "pt-BR",
+    "tema": "claro"
+}
