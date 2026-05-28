@@ -311,14 +311,6 @@ A versão **1.0** já possui a estrutura principal funcionando, incluindo modelo
 
 ---
 
-## 👨‍💻 Autor
-
-Desenvolvido por **Caio da Silva Braga**.
-
-Projeto criado com o objetivo de estudar e aplicar conceitos de **Inteligência Artificial**, **Machine Learning**, **Flask**, **Frontend Web** e integração entre sistemas.
-
----
-
 ## 📄 Licença
 
 Este projeto é de uso educacional e pode ser melhorado, adaptado e expandido conforme a evolução do desenvolvimento.
