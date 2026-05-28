@@ -172,7 +172,7 @@ Projeto_IA_Spam/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/K4yo-rnm/Ia-Spam-Classi](https://github.com/K4yo-rnm/Ia-Spam-Classi.git
+git clone -b release-v2.2.1 https://github.com/K4yo-rnm/Ia-Spam-Classi.git
 ```
 
 ### 2. Acesse a pasta do projeto
